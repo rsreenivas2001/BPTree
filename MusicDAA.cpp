@@ -55,6 +55,8 @@ public:
 // Constructor of Node
 Node::Node()
 {
+    IS_LEAF = false;
+    size = 0;
     key = new int[MAX];
     trackadd = new Song *[MAX];
     ptr = new Node *[MAX + 1];
@@ -1379,7 +1381,7 @@ int main()
     Tracks[108].playlist_name1 = "PARTY TONIGHT";
     Tracks[108].url = "https://www.youtube.com/watch?v=fhdLTvl9a74";
 
-    Tracks[209].index = 209;
+    Tracks[109].index = 209;
     Tracks[109].name = "DAAVUYA";
     Tracks[109].artist_name = "SANTHOSH NARAYANAN";
     Tracks[109].album_name = "REMO";
